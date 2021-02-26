@@ -1,27 +1,10 @@
 <template>
   <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">daniels-nuxt-app</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+    <Card
+      title="Tiger"
+      info="Dolore cillum voluptate nostrud duis labore. Voluptate sunt qui cupidatat ullamco occaecat reprehenderit excepteur tempor nisi laboris eiusmod irure eu. Et excepteur culpa id esse nisi pariatur quis aliquip enim minim. Aliquip velit ad esse ea excepteur deserunt in in. Cillum quis esse irure officia sunt do officia non ipsum."
+      author="Daniel C"
+    />
   </div>
 </template>
 
@@ -32,6 +15,10 @@ export default Vue.extend({})
 </script>
 
 <style>
+body,
+html {
+  font-size: 16px;
+}
 .container {
   margin: 0 auto;
   min-height: 100vh;
