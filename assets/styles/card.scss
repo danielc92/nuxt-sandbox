@@ -1,0 +1,25 @@
+.card {
+  padding: 2rem 3rem;
+  border-radius: 2px;
+  background: #f9f9f9;
+  max-width: 320px;
+  -webkit-box-shadow: 5px 5px 15px 5px #bfbfbf;
+  box-shadow: 5px 5px 15px 5px #bfbfbf;
+  text-align: left;
+
+  &__heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: darkslategrey;
+  }
+
+  &__info {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  &__author {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+}
