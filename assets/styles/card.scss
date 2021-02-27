@@ -1,11 +1,18 @@
 .card {
   padding: 2rem 3rem;
   border-radius: 2px;
-  background: #f9f9f9;
   max-width: 320px;
   -webkit-box-shadow: 5px 5px 15px 5px #bfbfbf;
   box-shadow: 5px 5px 15px 5px #bfbfbf;
   text-align: left;
+
+  &--light {
+    background: #f9f9f9;
+  }
+
+  &--dark {
+    background: #bfbfbf;
+  }
 
   &__heading {
     font-size: 1.8rem;
@@ -21,5 +28,6 @@
   &__author {
     font-weight: bold;
     font-size: 1rem;
+    margin-bottom: 1rem;
   }
 }
