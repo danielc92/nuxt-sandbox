@@ -1,8 +1,9 @@
 <template>
-  <div class="card">
+  <div :class="getClass()">
     <h1 class="card__heading">{{ title }}</h1>
     <p class="card__info">{{ info }}</p>
     <p class="card__author">Author: {{ author }}</p>
+    <Button label="learn more" @send-message="listenForChild" />
   </div>
 </template>
 
@@ -23,10 +24,25 @@ export default Vue.extend({
       type: String,
       required: true,
     },
+    variant: {
+      type: String,
+      default: 'light',
+      validator(value) {
+        return ['light', 'dark'].includes(value)
+      },
+    },
+  },
+  methods: {
+    getClass() {
+      return {
+        card: true,
+        'card--light': this.variant === 'light',
+        'card--dark': this.variant === 'dark',
+      }
+    },
+    listenForChild(event: any) {
+      console.log(event)
+    },
   },
 })
 </script>
-
-<style scoped lang="scss">
-/* stored in assets/styles/card.scss */
-</style>
