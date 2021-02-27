@@ -1,0 +1,26 @@
+@import '../colors';
+
+.button {
+  border: 1px solid black;
+  background: $primary;
+  color: $white;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  padding: 0.75rem;
+  font-weight: bold;
+  border-radius: 4px;
+
+  &.ripple {
+    background-position: center;
+    transition: background 0.8s;
+  }
+  &.ripple:hover {
+    background: #47a7f520 radial-gradient(circle, transparent 1%, #47a7f520 1%)
+      center/15000%;
+  }
+  &.ripple:active {
+    background-color: $primary;
+    background-size: 100%;
+    transition: background 0s;
+  }
+}
