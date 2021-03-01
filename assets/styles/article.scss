@@ -1,0 +1,29 @@
+.article {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 3rem;
+
+  &__unknown {
+    color: red;
+    font-weight: bold;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.68;
+}
+
+a {
+  display: block;
+}
