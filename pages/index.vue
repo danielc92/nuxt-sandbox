@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <CustomImage source="mountain.jpg" />
     <Card
       title="Occaecat irure cupidatat"
       info="Dolore cillum voluptate nostrud duis labore. Voluptate sunt qui cupidatat ullamco occaecat reprehenderit excepteur tempor nisi laboris eiusmod irure eu. Et excepteur culpa id esse nisi pariatur quis aliquip enim minim. Aliquip velit ad esse ea excepteur deserunt in in. Cillum quis esse irure officia sunt do officia non ipsum."
