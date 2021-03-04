@@ -43,4 +43,9 @@ export default {
   storybook: {
     addons: ['@storybook/addon-a11y', '@storybook/addon-controls'],
   },
+
+  target: 'static',
+  router: {
+    base: '/nuxt-sandbox/',
+  },
 }
