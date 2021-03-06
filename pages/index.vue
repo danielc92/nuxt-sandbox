@@ -1,19 +1,34 @@
 <template>
   <div class="container">
-    <CustomImage source="mountain.jpg" />
-    <Card
-      title="Occaecat irure cupidatat"
-      info="Dolore cillum voluptate nostrud duis labore. Voluptate sunt qui cupidatat ullamco occaecat reprehenderit excepteur tempor nisi laboris eiusmod irure eu. Et excepteur culpa id esse nisi pariatur quis aliquip enim minim. Aliquip velit ad esse ea excepteur deserunt in in. Cillum quis esse irure officia sunt do officia non ipsum."
-      author="Daniel C"
-      variant="dark"
-    />
+    <custom-button
+      :title="title"
+      :paragraph="paragraph"
+      @customclick="handleEmit"
+    >
+    </custom-button>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import CustomButton from '~/components/CustomButton/CustomButton.vue'
 
-export default Vue.extend({})
+export default Vue.extend({
+  components: { CustomButton },
+  data() {
+    return {
+      title: 'Anim quis proident .',
+      paragraph:
+        'Labore excepteur nostrud Lorem non culpa minim duis consequat eu minim magna minim elit incididunt.',
+    }
+  },
+  methods: {
+    handleEmit(value: any) {
+      // do something with value passed from child
+      console.log('Clicked', value)
+    },
+  },
+})
 </script>
 
 <style>
