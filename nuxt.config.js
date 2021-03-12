@@ -34,7 +34,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ['@nuxtjs/apollo'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
@@ -42,6 +42,14 @@ export default {
   // Storybook config
   storybook: {
     addons: ['@storybook/addon-a11y', '@storybook/addon-controls'],
+  },
+
+  apollo: {
+    clientConfigs: {
+      default: {
+        httpEndpoint: 'http://localhost:3002/graphql',
+      },
+    },
   },
 
   target: 'static',
