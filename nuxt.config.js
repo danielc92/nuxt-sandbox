@@ -34,7 +34,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/apollo'],
+  modules: ['@nuxtjs/apollo', '@nuxtjs/sitemap'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
@@ -52,8 +52,13 @@ export default {
     },
   },
 
+  sitemap: {
+    // options
+    gzip: true,
+  },
+
   target: 'static',
   router: {
-    base: '/nuxt-sandbox/',
+    base: '/',
   },
 }
