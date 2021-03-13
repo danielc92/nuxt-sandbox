@@ -55,10 +55,11 @@ export default {
   sitemap: {
     // options
     gzip: true,
+    hostname: 'https://danielc92.github.io/nuxt-sandbox/',
   },
 
   target: 'static',
   router: {
-    base: '/',
+    base: '/nuxt-sandbox/',
   },
 }
