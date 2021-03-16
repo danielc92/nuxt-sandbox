@@ -13,10 +13,13 @@
         <nuxt-link to="/new-layout-test">Custom layouts</nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/todos">Apollo page</nuxt-link>
+        <nuxt-link to="/todos">Fetching data - todo api</nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/apollo">Apollo page</nuxt-link>
+        <nuxt-link to="/apollo">Connecting to apollo server</nuxt-link>
+      </li>
+      <li>
+        <a href="/sitemap.xml">Sitemap generation</a>
       </li>
     </ul>
   </div>
