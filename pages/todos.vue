@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div id="todo-page">
     <h1>Todos</h1>
     <p>Mock todos from jsonplaceholder</p>
     <div
@@ -32,7 +32,7 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-.container {
+#todo-page {
   max-width: 760px;
   margin: 0 auto;
 }
