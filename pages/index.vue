@@ -1,7 +1,8 @@
 <template>
   <div id="home">
     <h1>Dan's Nuxt App</h1>
-    <p>Pages are listed below</p>
+    <p>A sandbox environment to learn Nuxtjs fundamentals and module system.</p>
+    <p>Pages are listed below, each one explores particular concept(s).</p>
     <ul>
       <li>
         <nuxt-link to="/conditionals">Conditionals</nuxt-link>
