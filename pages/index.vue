@@ -8,7 +8,10 @@
         <nuxt-link to="/conditionals">Conditionals</nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/custom-inputs">Custom Inputs</nuxt-link>
+        <nuxt-link to="/custom-inputs">Custom events with inputs</nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/custom-buttons">Custom events with buttons</nuxt-link>
       </li>
       <li>
         <nuxt-link to="/new-layout-test">Custom layouts</nuxt-link>
