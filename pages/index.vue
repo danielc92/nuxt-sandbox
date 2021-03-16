@@ -1,43 +1,37 @@
 <template>
-  <div class="container">
-    <custom-button
-      :title="title"
-      :paragraph="paragraph"
-      @customclick="handleEmit"
-    >
-    </custom-button>
+  <div id="home">
+    <h1>Dan's Nuxt App</h1>
+    <p>Pages are listed below</p>
+    <ul>
+      <li>
+        <nuxt-link to="/conditionals">Conditionals</nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/custom-inputs">Custom Inputs</nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/new-layout-test">Custom layouts</nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/todos">Apollo page</nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/apollo">Apollo page</nuxt-link>
+      </li>
+    </ul>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import CustomButton from '~/components/CustomButton/CustomButton.vue'
 
-export default Vue.extend({
-  components: { CustomButton },
-  data() {
-    return {
-      title: 'Anim quis proident .',
-      paragraph:
-        'Labore excepteur nostrud Lorem non culpa minim duis consequat eu minim magna minim elit incididunt.',
-    }
-  },
-  methods: {
-    handleEmit(value: any) {
-      // do something with value passed from child
-      console.log('Clicked', value)
-    },
-  },
-})
+export default Vue.extend({})
 </script>
 
 <style>
-.container {
+#home {
+  padding-top: 2rem;
+  max-width: 800px;
   margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 </style>
