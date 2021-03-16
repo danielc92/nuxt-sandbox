@@ -34,11 +34,24 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/apollo', '@nuxtjs/sitemap'],
+  modules: ['@nuxtjs/apollo', '@nuxtjs/toast', '@nuxtjs/sitemap'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 
+  toast: {
+    position: 'top-right',
+    register: [
+      // Register custom toasts
+      {
+        name: 'my-error',
+        message: 'Oops...Something went wrong',
+        options: {
+          type: 'error',
+        },
+      },
+    ],
+  },
   // Storybook config
   storybook: {
     addons: ['@storybook/addon-a11y', '@storybook/addon-controls'],
