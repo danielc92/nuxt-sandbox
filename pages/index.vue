@@ -14,10 +14,13 @@
         <nuxt-link to="/new-layout-test">Custom layouts</nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/todos">Fetching data - todo api</nuxt-link>
+        <nuxt-link to="/todos">Rendering RestAPI data</nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/apollo">Connecting to apollo server</nuxt-link>
+        <nuxt-link to="/apollo">Rendering GraphQL data</nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/images">Images</nuxt-link>
       </li>
       <li>
         <a href="/sitemap.xml">Sitemap generation</a>
