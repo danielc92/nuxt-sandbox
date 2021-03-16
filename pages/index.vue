@@ -11,6 +11,9 @@
         <nuxt-link to="/charts">Charts</nuxt-link>
       </li>
       <li>
+        <nuxt-link to="/toasts">Toasts</nuxt-link>
+      </li>
+      <li>
         <nuxt-link to="/custom-inputs">Custom events with inputs</nuxt-link>
       </li>
       <li>
