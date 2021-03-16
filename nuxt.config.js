@@ -60,6 +60,8 @@ export default {
 
   target: 'static',
   router: {
-    base: '/nuxt-sandbox/',
+    base: '/',
+    // Use this when building
+    // base: '/nuxt-sandbox/',
   },
 }
