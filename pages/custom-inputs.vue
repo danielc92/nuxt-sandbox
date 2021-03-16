@@ -25,10 +25,8 @@ export default Vue.extend({
 <style>
 .container {
   margin: 0 auto;
+  padding-top: 2rem;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  max-width: 800px;
 }
 </style>

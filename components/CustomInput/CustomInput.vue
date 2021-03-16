@@ -1,7 +1,8 @@
 <template>
-  <div>
-    <label :for="$attrs.id">{{ label }}</label>
+  <div class="input-group">
+    <label class="input-group__label" :for="$attrs.id">{{ label }}</label>
     <input
+      class="input-group__input"
       type="text"
       v-bind="$attrs"
       :value="value"
@@ -20,3 +21,21 @@ export default Vue.extend({
   },
 })
 </script>
+
+<style lang="scss">
+.input-group {
+  margin-bottom: 1rem;
+
+  &__label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+  }
+
+  &__input {
+    font-size: 1rem;
+    padding: 0.8rem 0.5rem;
+  }
+}
+</style>
