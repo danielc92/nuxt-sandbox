@@ -34,11 +34,17 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/apollo', '@nuxtjs/toast', '@nuxtjs/sitemap'],
+  modules: [
+    '@nuxtjs/apollo',
+    '@nuxtjs/toast',
+    '@nuxtjs/style-resources',
+    '@nuxtjs/sitemap',
+  ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 
+  // Toast config
   toast: {
     position: 'top-right',
     register: [
@@ -65,12 +71,17 @@ export default {
     },
   },
 
+  // Sitemap config
   sitemap: {
-    // options
     gzip: true,
     hostname: 'https://danielc92.github.io/nuxt-sandbox/',
   },
 
+  styleResources: {
+    scss: ['~/assets/_colors.scss'],
+  },
+
+  // Static config for gh-pages
   target: 'static',
   router: {
     base: '/',
