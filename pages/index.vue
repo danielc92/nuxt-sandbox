@@ -1,6 +1,6 @@
 <template>
-  <div id="home">
-    <h1>Dan's Nuxt App</h1>
+  <div class="home">
+    <h1 class="home__title">Dan's Nuxt App</h1>
     <p>A sandbox environment to learn Nuxtjs fundamentals and module system.</p>
     <p>Pages are listed below, each one explores particular concept(s).</p>
     <ul>
@@ -44,10 +44,14 @@ import Vue from 'vue'
 export default Vue.extend({})
 </script>
 
-<style>
-#home {
+<style lang="scss">
+.home {
   padding-top: 2rem;
   max-width: 800px;
   margin: 0 auto;
+
+  &__title {
+    color: $blue;
+  }
 }
 </style>
