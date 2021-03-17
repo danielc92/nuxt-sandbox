@@ -1,20 +1,28 @@
 <template>
   <div class="small">
-    <line-chart :chart-data="datacollection"></line-chart>
+    <h1>Charts page</h1>
     <button @click="fillData()">Randomize</button>
+    <h3>Line chart example</h3>
+    <line-chart :chart-data="lineData"></line-chart>
+
+    <h3>Bar chart example</h3>
+    <bar-chart :chart-data="barData"></bar-chart>
   </div>
 </template>
 
 <script>
 import LineChart from '~/components/LineChart/LineChart.js'
+import BarChart from '~/components/BarChart/BarChart.js'
 
 export default {
   components: {
+    BarChart,
     LineChart,
   },
   data() {
     return {
-      datacollection: null,
+      barData: null,
+      lineData: null,
     }
   },
   mounted() {
@@ -22,17 +30,38 @@ export default {
   },
   methods: {
     fillData() {
-      this.datacollection = {
+      this.fillLineData()
+      this.fillBarData()
+    },
+    fillLineData() {
+      this.lineData = {
         labels: [this.getRandomInt(), this.getRandomInt()],
         datasets: [
           {
-            label: 'Data One',
-            backgroundColor: '#1ea843',
+            label: 'Rainfall',
+            backgroundColor: '#326ba8',
             data: [this.getRandomInt(), this.getRandomInt()],
           },
           {
-            label: 'Data One',
-            backgroundColor: '#d6c71c',
+            label: 'Flooding levels',
+            backgroundColor: '#7da2c9',
+            data: [this.getRandomInt(), this.getRandomInt()],
+          },
+        ],
+      }
+    },
+    fillBarData() {
+      this.barData = {
+        labels: [this.getRandomInt(), this.getRandomInt()],
+        datasets: [
+          {
+            label: 'Oranges',
+            backgroundColor: 'orange',
+            data: [this.getRandomInt(), this.getRandomInt()],
+          },
+          {
+            label: 'Apples',
+            backgroundColor: 'red',
             data: [this.getRandomInt(), this.getRandomInt()],
           },
         ],
