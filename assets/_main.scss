@@ -1,3 +1,9 @@
 @import './styles/card.scss';
 @import './styles/button.scss';
 @import './styles/article.scss';
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}

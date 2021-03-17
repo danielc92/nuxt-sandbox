@@ -32,6 +32,9 @@
         <nuxt-link to="/images">Images</nuxt-link>
       </li>
       <li>
+        <nuxt-link to="/style-resources">Style resources</nuxt-link>
+      </li>
+      <li>
         <a href="/sitemap.xml">Sitemap generation</a>
       </li>
     </ul>

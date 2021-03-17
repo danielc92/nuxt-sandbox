@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <h1>Toasts</h1>
     <button
       @click="
