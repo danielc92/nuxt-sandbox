@@ -9,6 +9,9 @@
         <nuxt-link to="/conditionals">Conditionals</nuxt-link>
       </li>
       <li>
+        <nuxt-link to="/props">Props</nuxt-link>
+      </li>
+      <li>
         <nuxt-link to="/custom-inputs">Custom events with inputs</nuxt-link>
       </li>
       <li>
